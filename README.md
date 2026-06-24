@@ -1,7 +1,13 @@
-Telco Customer Churn Prediction
-Project for the course MLOps and System Design (EADA Business School). Training and prediction pipeline for customer churn in a telecommunications company.
+# 📱 Telco Customer Churn Prediction
+## MLOps & System Design Project - EADA Business School
 
-Project Structure
+**Team:** Alex, Mauricio, Syed
+
+---
+## Telco Customer Churn Prediction
+## Project for the course MLOps and System Design (EADA Business School). Training and prediction pipeline for customer churn in a telecommunications company.
+-------------------------------------------------------------------------------------------------------------------------------------------------
+## Project Structure
 ```
 telco-churn-mlops/
 ├── main.py                          # Punto de entrada (train / predict)
@@ -27,7 +33,7 @@ telco-churn-mlops/
     ├── ci.yml                       # CI: tests en cada pull request
     └── cd.yml                       # CD: entrena el modelo en push a main
 ```
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 ## How to Run
 
 ```bash
@@ -45,7 +51,7 @@ python main.py predict
 # Correr los tests
 pytest tests/ -v
 ```
-
+-------------------------------------------------------------------------------------------------------------------------------------------------
 ## Problem and Model Type
 Binary classification: predict whether a customer will churn (Churn: Yes/No) based on their demographic data, contract, and subscribed services.
 ## CI/CD
