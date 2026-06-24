@@ -1,4 +1,16 @@
-1. Problem Statement
+# 📊 Telco Customer Churn Prediction
+## Project Report - MLOps & System Design
+
+**Team Members:** 
+- Alex
+- Mauricio
+- Syed
+
+**Date:** June 24, 2026
+**Course:** EADA Business School
+
+---
+## 1. Problem Statement
 Problem Description
 Telecommunications companies lose a significant portion of their revenue due to customer churn. Detecting in advance which customers are at high risk of cancelling their service allows the company to act proactively (retention offers, sales outreach, service improvements) before losing the customer.
 
@@ -22,8 +34,8 @@ Allowed latency: high tolerance for training latency (it is a batch process, not
 Retraining: automated via CD (push to main), so that any change in preprocessing/training code regenerates the model without manual intervention.
 
 Identity of input/output data: customerID is used only as a reference for the prediction report, never as a model feature (it carries no predictive signal and prevents information leakage).
-
-2. Model Development
+-------------------------------------------------------------------------------------------------------------------------------------------------
+## 2. Model Development
 Preprocessing
 TotalCharges comes as text, with blank values for customers with tenure = 0 (new customers with no billing yet). Converted to numeric and imputed with 0.
 
@@ -58,8 +70,8 @@ mlflow ui --backend-store-uri sqlite:///mlflow.db
 [Insert screenshot 1 here: list of runs in MLflow UI, showing logistic_regression and random_forest with metrics in columns]
 
 [Insert screenshot 2 here: detail of the winning run (logistic_regression), showing registered parameters and metrics]
-
-3. Conclusions
+------------------------------------------------------------------------------------------------------------------------------------------------
+## 3. Conclusions
 The project implements a complete MLOps pipeline for predicting telecom customer churn:
 
 Problem: binary classification on static tabular data.
