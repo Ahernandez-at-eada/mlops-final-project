@@ -2,7 +2,7 @@ name: CD - Train Model
 
 on:
   push:
-    branches: [main]
+    branches: [feature/pipeline-core]
 
 jobs:
   train:
