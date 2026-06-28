@@ -9,6 +9,8 @@ notebook de experimentación, el pipeline de entrenamiento (CD) y el
 workflow on-demand de predicción usen exactamente la misma lógica.
 """
 
+
+
 import pandas as pd
 from sklearn.model_selection import train_test_split
 
